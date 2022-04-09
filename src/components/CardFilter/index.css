@@ -1,0 +1,74 @@
+.DashBoard-Card-filter-area{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+    margin-bottom: 24px;
+}
+.DashBoard-Card-filter-area__title{
+    width: 50%;
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    color: #212529
+}
+.DashBoard-Card-filter-area__btn{
+    height: 40px;
+    width: 70px;
+    max-width: 70px;
+    background-color: #E9ECEF;
+    border: 1.4px solid #E9ECEF;
+    box-sizing: border-box;
+    border-radius: 8px;
+    margin-left: 15px;
+
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    color: #5B6166;
+}
+
+.DashBoard-Card-filter-area__btn:hover{
+    background: #5B6166;
+    border: 1.4px solid #5B6166;
+    color: #F8F9FA;
+
+}
+
+.DashBoard-Card-filter-area__btn:focus{ 
+    background: #FD377E;
+    border: 1.4px solid #FD377E;
+    color: #FFFFFF;
+}
+
+
+.DashBoard-Card-filter-area__btn-group{
+    display: flex;
+    width: 80%;
+    justify-content: flex-end;
+}
+
+@media screen and (max-width: 590px) {
+    .DashBoard-Card-filter-area{
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: normal;
+        margin-bottom: 50px;
+    }
+
+    .DashBoard-Card-filter-area__title{
+        margin-bottom: 15px;
+
+    }
+
+    .DashBoard-Card-filter-area__btn-group{
+        justify-content: flex-start
+    }
+
+    .DashBoard-Card-filter-area__btn{
+        margin-left: 0;
+        margin-right: 15px
+    }
+}

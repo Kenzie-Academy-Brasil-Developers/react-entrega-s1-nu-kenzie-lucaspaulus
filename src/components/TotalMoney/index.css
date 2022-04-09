@@ -1,0 +1,61 @@
+.DashBoard-Total-Area{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+    width: 100%;
+    height: 96px;
+    max-width: 363px;
+
+    margin-top: 15px;
+
+    background-color: #FFFFFF;
+    border: 1px solid #E9ECEF;
+    border-radius: 4px;
+}
+
+.DashBoard-Total-Area__header{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 320px;
+
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+ 
+}
+
+.DashBoard-Total-Area__body{
+    display: flex;
+    width: 100%;
+    max-width: 320px;
+}
+
+.DashBoard-Total-Area__value{
+    color: #FD377E;
+}
+
+.DashBoard-Total-Area__msg {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    color: #5B6166;
+
+}
+
+@media screen and (max-width: 990px){
+    .DashBoard-Total-Area{
+        padding:15px;
+        max-width: 560px
+    }
+
+    .DashBoard-Total-Area__header, .DashBoard-Total-Area__body{
+        max-width: 490px
+         
+    }
+  
+}

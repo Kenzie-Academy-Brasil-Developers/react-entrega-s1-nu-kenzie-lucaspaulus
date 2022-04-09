@@ -1,0 +1,125 @@
+/* pallets de fonts e colors    */
+:root{
+    /* cores dos elementos */
+    --color-primary:    #FD377E;
+    --color-primary-2:  #E34981;
+    --color-secondary:  #03B898;
+    
+    --white-color:      #ffffff;
+    --grey1-color:      #F8F9FA;
+    --grey2-color:      #E9ECEF;
+    --grey3-color:      #868E96;
+    --grey3-b-color:    #5B6166;
+    --grey4-color:      #212529;
+
+    /* fonts dos elementos */
+    --font-family-Nunito: 'Nunito', sans-serif;
+    --font-family-Inter: 'Inter', sans-serif;
+    --font-style-normal: normal;
+
+    --font-weight-400: 400;
+    --font-weight-600: 600;  
+    --font-weight-700: 700;
+
+
+    --font-size-16: 16px;
+    --font-size-12: 12px;
+    --font-size-14: 14px;
+  
+}
+
+.DashBoard-Card{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+
+    height: 100px;
+    padding-left: 18px;
+    margin-bottom: 32px;
+    background-color: var(--grey1-color);
+    border-radius: 4px;
+}
+
+.DashBoard-Card:hover{
+    background: #FFFFFF;
+    box-shadow: 0px 4px 42px -12px rgba(0, 0, 0, 0.25);
+    border-radius: 4px;
+}
+.DashBoard-Card--BorderColor-grey{
+    border-left: 4px solid var(--grey2-color)
+}
+.DashBoard-Card--BorderColor-green{
+    border-left: 4px solid var(--color-secondary)
+}
+
+.DashBoard-Card__header{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    
+}
+.DashBoard-Card__header-description-container{
+    overflow: auto;
+    width: 70%;
+    max-width: 350px;
+    word-break: break-word;
+    height: 60px;
+}
+.DashBoard-Card__header-description{
+    font-family: var(--font-family-Nunito);
+    font-style: var(--font-style-normal);
+    font-weight: var(--font-weight-700);
+    font-size: var(--font-size-16);
+    
+}
+
+.DashBoard-Card__header-box{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    max-width: 120px;
+    min-width: 80px;
+    flex-grow: 1;
+    margin: 0 15px;
+}
+
+.DashBoard-Card__header-value{
+    font-family: var(--font-family-Nunito);
+    font-style: var(--font-style-normal);
+    font-weight: var(--font-weight-400);
+    font-size: var(--font-size-12);
+    color: var(--grey4-color);
+
+    overflow: auto;
+    width: 100%;
+    max-width: 100px;
+}
+
+.btnColorDefault{
+    fill: #E9ECEF ;
+}
+.btnColorHover{
+    fill: #5B6166 ;
+}   
+
+.iconColorDefault{
+    fill: #5B6166;
+}
+.iconColorHover{
+    fill: #F8F9FA;
+}
+
+
+
+
+
+
+.DashBoard-Card__footer-typeValue{
+    font-family: var(--font-family-Nunito);
+    font-style: var(--font-style-normal);
+    font-weight: var(--font-weight-400);
+    font-size: var(--font-size-12);
+    color: var(--grey3-b-color);
+     
+}
+

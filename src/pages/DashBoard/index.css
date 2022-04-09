@@ -1,0 +1,50 @@
+.DashBoard{
+    background-color: #ffffff;
+    height: 100vh;
+}
+
+.DashBoard__body-container{
+    display: flex;
+    background-color: #ffffff;
+    margin-top: 30px;
+    justify-content: center;
+}
+
+.DashBoard__body{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 982px;
+    margin: 0 90px;
+}
+.DashBoard-container-leftside{
+    width: 100%;
+    max-width: 363px;
+}
+
+.DashBoard-container-rightside{
+    width: 100%;
+    margin-left: 50px;
+    max-width: 560px;
+}
+
+@media screen and (max-width: 990px){
+    .DashBoard__body{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .DashBoard-container-rightside{
+        margin-top: 50px;
+        margin-left: 0;
+    }
+    
+}
+
+@media  screen and (max-width:990px) {
+    .DashBoard-container-leftside{
+        max-width: 560px;
+    }
+}
+
+
