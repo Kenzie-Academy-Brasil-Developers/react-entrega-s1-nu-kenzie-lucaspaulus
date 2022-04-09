@@ -1,34 +1,3 @@
-/* pallets de fonts e colors    */
-:root{
-    /* cores dos elementos */
-    --color-primary:    #FD377E;
-    --color-primary-2:  #E34981;
-    --color-secondary:  #03B898;
-    
-    --white-color:      #ffffff;
-    --grey1-color:      #F8F9FA;
-    --grey2-color:      #E9ECEF;
-    --grey3-color:      #868E96;
-    --grey3-b-color:    #5B6166;
-    --grey4-color:      #212529;
-
-    /* fonts dos elementos */
-    --font-family-Nunito: 'Nunito', sans-serif;
-    --font-family-Inter: 'Inter', sans-serif;
-    --font-style-normal: normal;
-
-    --font-weight-400: 400;
-    --font-weight-600: 600;  
-    --font-weight-700: 700;
-
-
-    --font-size-16: 16px;
-    --font-size-12: 12px;
-    --font-size-14: 14px;
-  
-}
-/* estilos gerais do form */
-
 .DashBoard-Form{
     display: flex;
     flex-direction: column;
@@ -53,8 +22,6 @@
     
      
 }
-/* ------------------------------------------------------- */
-/* estilos da parte que insere a descrição */
 
 .DashBoard-Form__description{
     display: flex;
@@ -62,11 +29,6 @@
     height: 110px;
     width: 100%;
     justify-content: space-between;
-}
-
-
-.DashBoard-Form__description-title {
-     
 }
 
 .DashBoard-Form__description-input{
@@ -95,27 +57,18 @@
     color: var(--grey3-color);
 }
 
-
-/* -------------------------------------- */
-
-/* estilo do container da parte que insere o valor e seleciona o tipo de valor */
 .DashBoard-Form__two-columns{
     display: flex;
     width: 100%;
     margin: 17px 0 19px 0;
 }
-/* --------------------------------------------- */
 
-/* estilos da parte que insere o valor */
 .DashBoard-Form__value{
     display: flex;
     flex-direction: column;
     width: 100%;
 }
 
-.DashBoard-Form__value-title{
-
-}
 .DashBoard-Form__value-input{
     height: 48px;
     width: 100%;
@@ -139,17 +92,12 @@
 .DashBoard-Form__value-input::-webkit-outer-spin-button, .DashBoard-Form__value-input::-webkit-inner-spin-button{
     -webkit-appearance: none
 }   
-/* ---------------------------------------------- */
 
-/* estilos da parte que seleciona o tipo do valor */
 .DashBoard-Form__type{
     width: 100%;
     margin-left: 30px;
     display: flex;
     flex-direction: column;
-}
-.DashBoard-Form__type-title{
-
 }
 
 .DashBoard-Form__type-select{
@@ -191,13 +139,6 @@
     background-color: var(--grey1-color);
     color: var(--grey3-b-color);
 }
-
-.DashBoard-Form__type-option:hover{
-    background-color:/*  var(--grey2-color) */ red;
-    color: /* var(--grey4-color) */ yellow;
-}
-
-/* _-------------------------------------------- */
 
 .DashBoard-Form__btn{
     height: 48px;

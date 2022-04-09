@@ -1,6 +1,8 @@
 import "./index.css"
 export default function DashboardHeader({logo, handlePage}){
     return(
+
+        // cria a header do dashboard com suas propriedades
         <header className="DashBoard__header">
             <nav className='DashBoard__header-nav'>
                 <figure>

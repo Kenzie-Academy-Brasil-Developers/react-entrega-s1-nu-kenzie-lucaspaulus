@@ -1,17 +1,21 @@
 import { useState } from "react"
+import "../../colors/RootStyle.css"
 import "./index.css"
 export default function Card({Transaction, BorderColor, filterFunc }){
     const [btnColor, setBtnColor] = useState("")
     const [iconColor, setIcontColor] = useState("")
 
-    function hoverBtnDelete(valor1,valor2){
+    // Adiciona um hover no botao em formato svg, cuja função é deletar o card
+    function hoverBtnDelete(colorbtn,colorIcon){
 
-        setBtnColor(valor1)
-        setIcontColor(valor2)
+        setBtnColor(colorbtn)
+        setIcontColor(colorIcon)
 
     }
 
     return(
+
+        //Cria o design do card e suas propriedades
         <div className={`DashBoard-Card ${BorderColor}`}>
 
             <div className="DashBoard-Card__header">
@@ -21,7 +25,7 @@ export default function Card({Transaction, BorderColor, filterFunc }){
                 
                 <div className="DashBoard-Card__header-box">
                     <p className="DashBoard-Card__header-value">R$ {Transaction.value}</p>
-                    {/* ESTILO BOTÃO DELETE */}
+                    {/* Botao svg com o onclick para chamar a função, que adiciona as classes dinamicamente no rect e path do svg */}
                     <svg onClick={filterFunc} onMouseOver={()=>hoverBtnDelete("btnColorHover" ,"iconColorHover")}
                         onMouseOut={()=> hoverBtnDelete("btnColorDefault","iconColorDefault")} 
                         width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -37,7 +41,7 @@ export default function Card({Transaction, BorderColor, filterFunc }){
                 </div>
                
             </div>
-
+            
             <div className="DashBoard-Card__footer">
                 <p className="DashBoard-Card__footer-typeValue">{Transaction.type}</p>
             </div>

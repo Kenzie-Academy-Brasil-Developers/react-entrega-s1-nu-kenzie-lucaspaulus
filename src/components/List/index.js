@@ -3,7 +3,8 @@ import CardFilter from '../../components/CardFilter';
 import CardEmpty from "../CardEmpty";
 
 export default function List({listTransactions, setListTransactions, listFiltered, setListFiltered }){
-   
+
+//função que remove o card 
 function removeCard(index){
     const listTransactionsArrObj = listTransactions.splice(index,1)
     const filterTrasctionArrObj = listTransactions.filter((item)=> item !== listTransactionsArrObj)
@@ -18,7 +19,7 @@ function removeCard(index){
     return(
         
         <>  
-          
+            
             <CardFilter 
             listTransactions={listTransactions} 
             setListTransactions={setListTransactions} 

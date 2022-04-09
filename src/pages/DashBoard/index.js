@@ -25,7 +25,8 @@ export default function DashBoard({isHomePage,setIsHomePage}){
         ])
  
     const [listFiltered, setListFiltered] = useState([])
-   
+        
+    //faz o calculo do saldo no dashboard
     const valor = listTransactions.reduce((acumulador, valorAtual) => {
             return acumulador + parseFloat(valorAtual.value)
 
@@ -36,6 +37,7 @@ export default function DashBoard({isHomePage,setIsHomePage}){
     }
 
     return(
+            // cria o dashboard com suas propriedades
             <main className="DashBoard">  
                
                 <DashboardHeader logo={logo} handlePage={handlePage}/>

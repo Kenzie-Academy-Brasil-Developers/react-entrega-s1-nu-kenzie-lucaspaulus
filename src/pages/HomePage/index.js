@@ -3,12 +3,16 @@ import nuKenzieLogoType from "../../assets/nuKenzieLogoTypeHomepage.svg"
 import dashboardDemo from "../../assets/dashboardDemo.svg"
 
 export default function HomePage({isHomePage, setIsHomePage}){
+
+    // função que muda a pagina do site
     function handlePage(){
       
         return setIsHomePage(false)
     }
 
     return(
+
+        // cria a pagina inicial do site com suas propriedades
         <main className="HomePage">
             <section className="HomePage-container-left-side">
                 <figure>

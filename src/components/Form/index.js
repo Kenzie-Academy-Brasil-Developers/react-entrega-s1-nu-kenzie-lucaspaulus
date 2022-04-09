@@ -1,10 +1,12 @@
 import {useState } from "react"
+import "../../colors/RootStyle.css"
 import "./index.css"
 export default function Form({listTransactions, setListTransactions}){
     const [description, setDescription] = useState("")
     const [type, setType] = useState("Entrada")
     const [value, setValue] = useState("")
     
+    // cria o template do objeto para adicionar ao card
     function addItem(){ 
 
         const dados = {
@@ -14,28 +16,35 @@ export default function Form({listTransactions, setListTransactions}){
 
         }
 
+        //atualiza as transações 
         setListTransactions([...listTransactions, dados])
+
+        // filtra as despesas e multiplica por -1 
         if (dados.type === "Despesa"){
             dados.value *= -1
         }
-       if(dados.value === ""){
+        // para inputs vazio, adiciona um 0 para o valor no card
+        if(dados.value === ""){
             dados.value = 0
-            console.log(value)
             setListTransactions([...listTransactions, dados])
+            //apaga o imput do valor após a submissão
             setValue("")
 
         }
+
         else{
              
             setListTransactions([...listTransactions, dados])
             setValue("")
         }
+
+        //apaga o imput da descrição após a submissão
         setDescription("") 
         
     }
 
     return(
-       
+            // cria o dashboard form com suas propriedades
             <form className="DashBoard-Form" onSubmit={(event)=> event.preventDefault()}>
 
                 <div className="DashBoard-Form__description">
@@ -70,7 +79,6 @@ export default function Form({listTransactions, setListTransactions}){
                 <button className="DashBoard-Form__btn" type="submit" onClick={()=> addItem()}>Inserir valor</button>
             </form>
 
-       
     )
 }
  
